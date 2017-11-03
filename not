@@ -1,0 +1,35 @@
+proje dosyasının içinde git init ile eklenir
+git add .
+asıl proje ekleme bu komut ile tam olur
+git commit -m "ilk proje kopyası"
+
+git log projede alınan versiyonları sıralar
+
+git status // projede değişiklikleri gösterir
+projeye yeni dosya ekleyince 
+$ git add dosyaismi
+sonra git commit -m "mesaj yaz" // bu komut yazılır.
+
+//diff komutu projedki değişiklikleri gösterir  Değişiklik yapılan yerin oncesi ve sonrasını gösterir.
+git diff
+//git diff --staged   komuttu geçiş bölgesi ile git teposu arasındaki değişiklikleri gösteriyo
+// dosya silme işlemi
+git rm dosya adı
+silme işlemi git commit -m ile tamamen gerçekleştirilir.
+//klasör silme 
+git rm -r silinecekdosya
+herzamangi gibi commit işlemi yapılır.
+
+//dosya ismi değiştirme
+git mv eski_isim yeni_isim
+git commit -m "eski_isim ->yeni_isim" şekinde yapılır
+//dizin değiştirme
+git mv tasınacak buklasörö
+git commit -m "tasınacak -> buklasörö"
+//version değitirme
+git checkout b526592169265d32f0d6f9459539dcf05f6d4bf0 -- .
+uzun sayılardan oluşan sayı version numarası git log ile versionlar sıralanıyor oradan seçiyoruz.
+bundansonra git commit -m "istenilen version kopyalandı "  yazılarak bititrilir
+
+
+
